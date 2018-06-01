@@ -1,0 +1,18 @@
+{
+  "name": "npm-standard-package",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NTK MOSTECH site",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/it4joy/NTK-MOSTECH.git"
+  },
+  "keywords": [],
+  "author": "Igor Ivanov - Graphical Shell",
+  "license": "GPL-3.0"
+}
