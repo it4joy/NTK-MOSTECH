@@ -1,3 +1,6 @@
 /node_modules
 /build
 /src-front/assets/graphics
+/tmp
+/.babelrc
+/package-lock.json
