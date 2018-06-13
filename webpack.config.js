@@ -3,6 +3,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 module.exports = {
@@ -21,40 +22,64 @@ module.exports = {
         }
       },
       {
+        // add ExtractTextPlugin & Autoprefixer for .css
         test: /\.css$/,
         use: [ 'style-loader', 'css-loader' ]
       },
       {
         test: /\.less$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: [
+                  autoprefixer({
+                    // use '.browserslistrc'
+                    browsers:['ie >= 8', 'last 4 version']
+                  })
+                ],
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'less-loader',
+              options: {
+                sourceMap: true
+              }
+            }
+          ]
+        })
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
         use: [
           {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader',
+            loader: 'file-loader',
             options: {
-              sourceMap: true
-            }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: [
-                autoprefixer({
-                  // use '.browserslistrc'
-                  browsers:['ie >= 8', 'last 4 version']
-                })
-              ],
-              sourceMap: true
-            }
-          },
-          {
-            loader: 'less-loader',
-            options: {
-              sourceMap: true
+              name: '[path][name].[ext]',
+              context: ''
             }
           }
-        ],
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
       },
     ]
   },
@@ -62,7 +87,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
-    })
+    }),
+    new ExtractTextPlugin('styles.css'),
   ],
   // !
   /* noParse: function(content) {
