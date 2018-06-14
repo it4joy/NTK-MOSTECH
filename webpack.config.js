@@ -22,12 +22,7 @@ module.exports = {
         }
       },
       {
-        // add ExtractTextPlugin & Autoprefixer for .css
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
-      },
-      {
-        test: /\.less$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
@@ -50,7 +45,75 @@ module.exports = {
               }
             },
             {
+              loader: 'resolve-url-loader',
+            },
+          ]
+        })
+      },
+      {
+        test: /\.less$/,
+        use: ExtractTextPlugin.extract({
+          publicPath: './src-front/assets/graphics/',
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: [
+                  autoprefixer({
+                    // use '.browserslistrc'
+                    browsers:['ie >= 8', 'last 4 version']
+                  })
+                ],
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'resolve-url-loader',
+            },
+            {
               loader: 'less-loader',
+              options: {
+                sourceMap: true
+              }
+            }
+          ]
+        })
+      },
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: [
+                  autoprefixer({
+                    // use '.browserslistrc'
+                    browsers:['ie >= 8', 'last 4 version']
+                  })
+                ],
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'resolve-url-loader',
+            },
+            {
+              loader: 'sass-loader',
               options: {
                 sourceMap: true
               }
