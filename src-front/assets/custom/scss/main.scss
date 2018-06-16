@@ -1,5 +1,11 @@
+// VENDORS
+
+@import "./vendors/bootstrap.scss";
+
+
 // CORE
 
+@import "./core/core.scss";
 
 
 // COMPONENTS
@@ -10,10 +16,11 @@
 
 // CONTENT
 
-//@import "./content/";
+@import "./content/content.scss";
 
 
 // BLOCKS
 // specific ui blocks according certain business-logic of app
+
 
 // other styles

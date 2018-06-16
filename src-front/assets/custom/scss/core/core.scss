@@ -1,0 +1,18 @@
+@import "./variables.scss";
+
+.html {
+  line-height: $line-height-base;
+  font-family: $font-family-base;
+  font-size: 10px;
+  font-weight: $font-weight-normal;
+  color: $body-color;
+}
+
+.html, .body {
+  min-height: 100vh;
+}
+
+.body {
+  background: $body-bg;
+}
+

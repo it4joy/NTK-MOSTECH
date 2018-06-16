@@ -1,2 +1,2 @@
-require('./vendors/vendors.js');
 require('./custom/custom.js');
+require('./vendors/vendors.js');
