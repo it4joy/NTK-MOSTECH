@@ -6,3 +6,15 @@
   background: $white;
   box-shadow: $box-shadow-default;
 }
+
+.top-contacts {
+  background-image: $linear-blue-gradient;
+  color: $white;
+  .nav-link {
+    color: $white;
+  }
+}
+
+.navbar-wrapper {
+  background: $white;
+}

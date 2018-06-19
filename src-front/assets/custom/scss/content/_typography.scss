@@ -1,3 +1,5 @@
+// Headings
+
 .h1 {
   font-size: $h1-font-size;
 }
@@ -15,4 +17,10 @@
 }
 .h6 {
   font-size: $font-size-base;
+}
+
+// Links
+
+.nav-link.disabled:hover {
+  cursor: default;
 }
