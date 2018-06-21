@@ -1,0 +1,11 @@
+@mixin transition-mixin() {
+  
+}
+
+@mixin link-mixin {
+  background-color: $transparent;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -16,3 +16,20 @@
   background: $body-bg;
 }
 
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-block {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.box {
+  display: inline-block;
+  padding: 1.5rem;
+  background: $white;
+  box-shadow: $box-shadow-default;
+}

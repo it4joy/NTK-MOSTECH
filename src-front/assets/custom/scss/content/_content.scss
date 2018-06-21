@@ -1,10 +1,2 @@
-@import "./navbar";
-@import "./top-block";
+@import "./tables";
 @import "./typography";
-
-.box {
-  display: inline-block;
-  padding: 1.5rem;
-  background: $white;
-  box-shadow: $box-shadow-default;
-}

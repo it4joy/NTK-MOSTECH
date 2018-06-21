@@ -3,7 +3,14 @@
 .top-contacts {
   background-image: $linear-blue-gradient;
   color: $white;
+  .nav {
+    min-height: 5rem;
+  }
   .nav-link {
+    display: inline-block;
     color: $white;
+    &:not(.disabled):hover {
+      opacity: $opacity-default;
+    }
   }
 }

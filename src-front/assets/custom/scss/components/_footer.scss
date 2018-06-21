@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 13rem;
+  padding: 2rem 0;
+  background: $blue-gray;
+  color: $white;
+  .list {
+    & .link {
+      color: $gray-100;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}

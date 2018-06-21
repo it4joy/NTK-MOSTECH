@@ -19,8 +19,41 @@
   font-size: $font-size-base;
 }
 
+
+// Cases
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
 // Links
+
+.link {
+  @include link-mixin;
+}
 
 .nav-link.disabled:hover {
   cursor: default;
+}
+
+
+// Lists
+
+.list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list_horizontal {
+  display: flex;
+  align-items: center;
 }
