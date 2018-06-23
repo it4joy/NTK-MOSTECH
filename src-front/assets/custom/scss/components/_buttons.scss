@@ -1,0 +1,6 @@
+.btn-primary {
+  &:hover {
+    background: $blue-light;
+    border-color: $blue-light;
+  }
+}

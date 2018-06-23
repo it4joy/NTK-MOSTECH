@@ -1,5 +1,4 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 13rem;
+  @include display-flex-mixin(flex, column, flex-start, stretch, nowrap);
+  flex: 0 0 20rem;
 }

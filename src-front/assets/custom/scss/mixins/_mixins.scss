@@ -1,6 +1,22 @@
+// Display
+
+@mixin display-flex-mixin($display, $direction, $justify_content, $align_items, $flex_wrap) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify_content;
+  align-items: $align_items;
+  flex-wrap: $flex_wrap;
+}
+
+
+// Effects
+
 @mixin transition-mixin() {
   
 }
+
+
+// Typography
 
 @mixin link-mixin {
   background-color: $transparent;

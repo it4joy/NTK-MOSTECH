@@ -17,14 +17,17 @@
 }
 
 .app-wrapper {
-  display: flex;
-  flex-direction: column;
+  @include display-flex-mixin(flex, column, flex-start, stretch, nowrap);
   min-height: 100vh;
 }
 
 .main-block {
-  display: flex;
+  @include display-flex-mixin(flex, row, flex-start, stretch, nowrap);
   flex: 1 0 auto;
+  padding: 1.5rem 0;
+  .row {
+    min-width: 100%;
+  }
 }
 
 .box {

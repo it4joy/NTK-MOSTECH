@@ -1,7 +1,5 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include display-flex-mixin(flex, row, space-between, center, nowrap);
   flex: 0 0 13rem;
   padding: 2rem 0;
   background: $blue-gray;

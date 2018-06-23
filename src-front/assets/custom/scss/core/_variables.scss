@@ -7,7 +7,8 @@ $opacity-default: .8;
 $linear-blue-gradient: linear-gradient(to right, #1F98AF, #037AAD 75%);
 
 $blue-gray: #7B899C;
-
+$blue-light: #2F80ED;
+$turquoise: #1F98B0;
 
 // Shadows
 
@@ -18,3 +19,7 @@ $box-shadow-default: 0 .2rem .3rem rgba($black, .15);
 // nav & navbar
 
 $nav-padding-lg: 0.5rem 2rem;
+
+// borders
+
+$border-radius-xlg: .5rem;

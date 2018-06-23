@@ -12,6 +12,7 @@ $gray-900: #111111;
 
 $theme-colors: (
   "primary": #286BA4,
+  "secondary": #1EB7AE,
   "danger": #FF9999
 );
 
@@ -76,12 +77,13 @@ $input-btn-padding-x-lg: 2.4rem;
 
 $btn-link-disabled-color: $gray-500;
 
+
 // Forms
 
 $input-disabled-bg: $gray-300;
 
 $input-color: $gray-800;
-$input-border-color: $gray-500;
+$input-border-color: $gray-300;
 
 $input-focus-border-color: $gray-700;
 

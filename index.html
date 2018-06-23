@@ -91,26 +91,26 @@
             <div class="row">
               <div class="col-md-6 offset-md-3">
                 <form class="form-inline">
-                  <input type="text" class="form-control" id="cat-search" placeholder="Поиск по каталогу..." required>
-                  <select class="form-control" id="select-all-cat">
+                  <input type="text" class="form-control cat-search" id="cat-search" placeholder="Поиск по каталогу..." required>
+                  <select class="form-control select-all-cat" id="select-all-cat">
                     <option disabled selected>все категории</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
                   </select>
-                  <select class="form-control" id="unload-term">
+                  <select class="form-control unload-term" id="unload-term">
                     <option disabled selected>срок отгрузки</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
                   </select>
-                  <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                  <button type="button" class="btn btn-primary btn-search"><i class="fa fa-search"></i></button>
                 </form>
               </div>
-              <div class="col-md-2">
-                <span class="">Правила поиска</span>
+              <div class="col-md-2 cat-search-rules">
+                <span class="rules-sign">Правила поиска</span>
               </div>
             </div>
           </div>
@@ -118,7 +118,17 @@
       </header>
 
       <div class="container main-block">
-        
+        <div class="row">
+          <aside class="sidebar col-md-3">
+            <div class="banner">
+              <span class="heading">Samtec поставка в Россию под заказ, сроки 4-6 недель</span>
+              <span class="link action-link">Выбрать и заказать <i class="fa fa-chevron-right"></i></span>
+            </div>
+          </aside>
+          <main class="main col-md-9">
+            
+          </main>
+        </div>
       </div>
 
       <footer class="footer">

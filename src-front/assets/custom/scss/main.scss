@@ -3,25 +3,25 @@
 @import "./vendors/bootstrap";
 
 
+// MIXINS
+
+@import "./mixins/mixins";
+
+
 // CORE
 
 @import "./core/core";
 
 
-// MIXINS
+// CONTENT
 
-@import "./mixins/mixins";
+@import "./content/content";
 
 
 // COMPONENTS
 // general properties of the frequently used ui components + thematic styles
 
 @import "./components/components";
-
-
-// CONTENT
-
-@import "./content/content";
 
 
 // BLOCKS

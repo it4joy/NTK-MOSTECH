@@ -1,4 +1,37 @@
 .cat-search-wrapper {
+  @include display-flex-mixin(flex, row, flex-start, center, nowrap);
   min-height: 7rem;
   background: $gray-100;
+  .form-control {
+    border-radius: $border-radius-xlg;
+    border-color: $transparent;
+    //border-right-color: $gray-100;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    &.select-all-cat,
+    &.unload-term {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+  .btn-search {
+    border-radius: $border-radius-xlg;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.cat-search-rules {
+  @include display-flex-mixin(flex, row, flex-start, center, nowrap);
+  .rules-sign {
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: .15rem;
+    border-bottom: .1rem dashed $gray-500;
+    color: $gray-500;
+    &:hover {
+      border-bottom-color: $gray-700;
+      color: $gray-700;
+    }
+  }
 }
