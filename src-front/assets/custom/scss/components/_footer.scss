@@ -5,11 +5,14 @@
   background: $blue-gray;
   color: $white;
   .list {
-    & .link {
+    .link {
       color: $gray-100;
       &:hover {
         color: $white;
       }
+    }
+    & li:last-child {
+      margin-top: 1rem;
     }
   }
 }

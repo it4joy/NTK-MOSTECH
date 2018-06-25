@@ -17,9 +17,9 @@
       &:hover {
         border-color: $link-hover-color;
       }
-      &.active {
-        border-color: $link-color;
-      }
+    }
+    .nav-item.active .nav-link:not(.nav-link-last) {
+      border-color: $link-color;
     }
     .nav-item.last {
       display: flex;

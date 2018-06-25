@@ -18,7 +18,12 @@
 
 // Typography
 
+@mixin set-case($case) {
+  text-transform: $case
+}
+
 @mixin link-mixin {
+  display: inline-block;
   background-color: $transparent;
   text-decoration: none;
   &:hover {

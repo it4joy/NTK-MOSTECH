@@ -1,0 +1,65 @@
+.carousel {
+  .heading {
+    margin-bottom: 1.2rem;
+  }
+  .short-descr {
+    margin-bottom: 1.2rem;
+    font-size: $font-size-lg;
+  }
+  .btn-action {
+    @include set-case(uppercase);
+  }
+}
+
+.carousel-control {
+  overflow: hidden;
+  .icon-wrapper {
+    position: absolute;
+    @include display-flex-mixin(flex, row, center, center, nowrap);
+    width: 7rem;
+    height: 7rem;
+    background: rgba($black, .5);
+    border-radius: 50%;
+    &.left {
+      left: -3.5rem;
+    }
+    &.right {
+      right: -3.5rem;
+    }
+    .control-icon {
+      position: relative;
+    }
+  }
+}
+
+
+// Overriding component's styles
+
+.carousel-control-prev-icon {
+  left: 1.5rem;
+}
+
+.carousel-control-next-icon {
+  right: 1.5rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  justify-content: initial;
+}
+
+.carousel-indicators {
+  bottom: -30px;
+  li {
+    width: 1rem;
+    height: 1rem;
+    background: $gray-300;
+    border-radius: 50%;
+    &:hover {
+      background: $blue-light;
+    }
+  }
+  .active {
+    background: theme-color("primary");
+  }
+}

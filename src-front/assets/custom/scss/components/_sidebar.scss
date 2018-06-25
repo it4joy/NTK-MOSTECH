@@ -1,5 +1,6 @@
 .sidebar {
   .banner {
+    margin-bottom: 1.5rem;
     padding: 1.5rem;
     width: 100%;
     min-height: 11rem;
@@ -7,15 +8,18 @@
     border-radius: $border-radius-lg;
     border-left: 1rem solid $turquoise;
     .heading {
-      display: inline-block;
       font-size: $font-size-md;
     }
     .action-link {
       display: inline-block;
+      margin-top: 1rem;
       color: $gray-700;
       &:hover {
         color: $gray-800;
       }
+    }
+    &:hover {
+      box-shadow: $box-shadow-default;
     }
   }
 }

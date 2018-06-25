@@ -1,3 +1,11 @@
+// Sizes
+
+.btn-md {
+  font-size: $font-size-md;
+}
+
+// Colours
+
 .btn-primary {
   &:hover {
     background: $blue-light;

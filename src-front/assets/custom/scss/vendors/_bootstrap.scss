@@ -25,7 +25,7 @@ $body-color: $gray-800;
 
 // Style anchor elements.
 
-$link-color: #286BA4;
+$link-color: theme-color("primary");
 $link-hover-color: #2F80ED;
 $link-hover-decoration: none;
 
