@@ -1,0 +1,49 @@
+.product-item {
+  @include display-flex-mixin(flex, column, space-between, center, nowrap);
+  margin: 0 auto;
+  overflow: hidden;
+  width: 18rem;
+  height: 30rem;
+  background: $white;
+  border-radius: $border-radius-lg;
+  text-align: center;
+  &:hover {
+    box-shadow: $box-shadow-default;
+  }
+  .img-wrapper {
+    position: relative;
+  }
+  .overlay-block {
+    position: absolute;
+    top: -18rem;
+    left: 0;
+    //z-index: 10; // ?..
+    @include display-flex-mixin(flex, row, center, center, nowrap);
+    width: 100%;
+    height: 100%;
+    background: rgba($black, .5);
+  }
+  .icon-wrapper {
+    width: 8rem;
+    height: 8rem;
+    background: rgba($white, .85);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 8rem;
+    .fa {
+      color: $gray-700;
+      &:hover {
+        cursor: pointer;
+        color: $gray-800;
+      }
+    }
+  }
+  .name {
+    display: inline-block;
+    padding: 1rem;
+    font-size: $font-size-md;
+  }
+  .price {
+    padding: 1rem;
+  }
+}

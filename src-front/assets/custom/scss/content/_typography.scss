@@ -25,6 +25,21 @@
 $font-size-md: 1.6rem;
 
 
+// Heading groups
+
+.complex-heading {
+  @include display-flex-mixin(flex, row, space-between, flex-end, wrap);
+  margin-bottom: 1.5rem;
+  .link {
+    font-size: $font-size-md;
+    color: $gray-500;
+    &:hover {
+      color: $gray-700;
+    }
+  }
+}
+
+
 // Links
 
 .link {
