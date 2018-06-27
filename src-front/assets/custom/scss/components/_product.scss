@@ -17,7 +17,6 @@
     position: absolute;
     top: -18rem;
     left: 0;
-    //z-index: 10; // ?..
     @include display-flex-mixin(flex, row, center, center, nowrap);
     width: 100%;
     height: 100%;

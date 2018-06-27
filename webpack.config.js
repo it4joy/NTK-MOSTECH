@@ -153,6 +153,11 @@ module.exports = {
     }),
     new ExtractTextPlugin('styles.css'),
   ],
+  resolve: {
+    alias: {
+      
+    }
+  },
   // !
   /* noParse: function(content) {
     return /jquery|lodash/.test(content);

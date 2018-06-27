@@ -4,10 +4,16 @@ module.exports = function(msg) {
   alert(`Welcome ${msg}`);
 }
 
+// product item overlay
+
 let productItemOverlay = $(".overlay-block");
 
 $(".product-item .img-wrapper").hover(function() {
-  $(productItemOverlay).animate({top: "0px"}, 500);
+  $(this).find(productItemOverlay).animate({top: "0px"}, 500);
 }, function() {
-  $(productItemOverlay).animate({top: "-18rem"}, 500);
+  $(this).find(productItemOverlay).animate({top: "-18rem"}, 500);
 });
+
+// sidebar menu
+
+
