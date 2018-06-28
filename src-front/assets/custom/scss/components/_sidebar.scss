@@ -1,5 +1,38 @@
 // Sidebar nav & banners
 
+.sidebar-menu {
+  background: $white;
+  .link {
+    @include display-flex-mixin(flex, row, space-between, center, nowrap);
+    padding: 1.5rem;
+    color: $gray-800;
+    .fa {
+      color: $gray-300;
+    }
+    &:hover {
+      font-weight: $font-weight-bold;
+      color: $blue-light;
+      .fa {
+        color: $blue-light;
+      }
+    }
+  }
+  .has-dropdown {
+    position: relative;
+    a.current {
+      background: lighten($gray-100, 5%);
+    }
+  }
+  .dropdown-sidebar-menu {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    display: none;
+    background: $white;
+    box-shadow: $box-shadow-default;
+  }
+}
+
 .sidebar {
   .banner {
     margin-bottom: 1.5rem;
