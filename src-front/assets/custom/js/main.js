@@ -25,8 +25,8 @@ $(".dropdown-sidebar-menu").css("width", sidebarInnerWidth);
 
 $(".has-dropdown").hover(function() {
   $(this).children(".link").addClass("current");
-  $(".dropdown-sidebar-menu").show();
+  $(this).children(".dropdown-sidebar-menu").show();
 }, function() {
   $(this).children(".link").removeClass("current");
-  $(".dropdown-sidebar-menu").hide();
+  $(this).children(".dropdown-sidebar-menu").hide();
 });

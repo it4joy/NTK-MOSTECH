@@ -23,13 +23,14 @@
     background: rgba($black, .5);
   }
   .icon-wrapper {
+    @include display-flex-mixin(flex, row, center, center, nowrap);
     width: 8rem;
     height: 8rem;
     background: rgba($white, .85);
     border-radius: 50%;
-    text-align: center;
-    line-height: 8rem;
+    //text-align: center;
     .fa {
+      font-size: 2.6rem;
       color: $gray-700;
       &:hover {
         cursor: pointer;

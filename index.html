@@ -10,7 +10,7 @@
     <title>test</title>
 
     <link rel="stylesheet" type="text/css" href="build/styles.css">
-    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -129,7 +129,16 @@
                 <li><a href="#" class="link">Программируемая и стандартная логика <i class="fa fa-chevron-right"></i></a></li>
                 <li><a href="#" class="link">Датчики <i class="fa fa-chevron-right"></i></a></li>
                 <li><a href="#" class="link">Диоды</a></li>
-                <li><a href="#" class="link">Дисплеи и схемы управления<i class="fa fa-chevron-right"></i></a></li>
+                <!-- test -->
+                <li class="has-dropdown">
+                  <a href="#" class="link">Дисплеи и схемы управления<i class="fa fa-chevron-right"></i></a>
+                  <ul class="list dropdown-sidebar-menu">
+                    <li><a href="#" class="link">Test_subitem_1</a></li>
+                    <li><a href="#" class="link">Test_subitem_2</a></li>
+                    <li><a href="#" class="link">Test_subitem_3</a></li>
+                  </ul>
+                </li>
+                <!-- / test -->
                 <li><a href="#" class="link">Конденсаторы и резисторы <i class="fa fa-chevron-right"></i></a></li>
                 <li><a href="#" class="link">Компоненты беспроводных технологий <i class="fa fa-chevron-right"></i></a></li>
                 <li><a href="#" class="link">Коммутационные изделия <i class="fa fa-chevron-right"></i></a></li>
@@ -138,7 +147,16 @@
                 <li class="has-dropdown">
                   <a href="#" class="link">Оптоэлектроника <i class="fa fa-chevron-right"></i></a>
                   <ul class="list dropdown-sidebar-menu">
-                    <li><a href="#" class="link">Компоненты подсветки <i class="fa fa-chevron-right"></i></a></li>
+                    <!-- test : nesting of 3rd level -->
+                    <li class="has-dropdown">
+                      <a href="#" class="link">Компоненты подсветки <i class="fa fa-chevron-right"></i></a>
+                      <ul class="list dropdown-sidebar-menu">
+                        <li><a href="#" class="link">Test_subsubitem_1</a></li>
+                        <li><a href="#" class="link">Test_subsubitem_2</a></li>
+                        <li><a href="#" class="link">Test_subsubitem_3</a></li>
+                      </ul>
+                    </li>
+                    <!-- / test -->
                     <li><a href="#" class="link">Дисплеи <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="#" class="link">Драйвера <i class="fa fa-chevron-right"></i></a></li>
                     <li><a href="#" class="link">Оптоволокно <i class="fa fa-chevron-right"></i></a></li>
