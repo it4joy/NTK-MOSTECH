@@ -110,7 +110,7 @@
                 </form>
               </div>
               <div class="col-md-2 cat-search-rules">
-                <span class="rules-sign">Правила поиска</span>
+                <span class="rules-sign" data-toggle="modal" data-target="#searchRules">Правила поиска</span>
               </div>
             </div>
           </div>
@@ -381,6 +381,33 @@
           </div>
         </div>
       </footer>
+
+      <div class="modal fade" id="searchRules" tabindex="-1" role="dialog" aria-labelledby="searchRulesLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="searchRulesLabel">Правила поиска</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <ul class="list">
+                <li><i class="fa fa-angle-right"></i> Минимальное количество символов для поиска - 3.</li>
+                <li><i class="fa fa-angle-right"></i> Для пропуска нескольких символов используйте символ &laquo;звездочка&raquo; (*).</li>
+                <li><i class="fa fa-angle-right"></i> Для пропуска одного символа используйте знак вопроса (?).</li>
+                <li><i class="fa fa-angle-right"></i> Разделители типа пробел автоматически удаляются.</li>
+                <li><i class="fa fa-angle-right"></i> Вы можете фильтровать позиции в результатах поиска по производителю. Для этого необходимо ввести в графу &laquo;Искать в найдённом&raquo; наименование производителя, например *maxim*.</li>
+              </ul>
+              <h6>Пример:</h6>
+              <p>поиск со строкой <code>te ca?1?0*d20</code> выдаст <code>TECAP 100/10V D 20, TECAP 150/10V D 20</code> и т. п.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="build/bundle.js"></script>
