@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js" async="async"></script>
   </head>
 
   <body class="body index">
@@ -220,12 +223,14 @@
               </div>
               <a class="carousel-control carousel-control-prev" href="#sliderOnIndex" role="button" data-slide="prev">
                 <div class="icon-wrapper left">
+                  <i class="fa fa-chevron-left control-icon"></i>
                   <span class="control-icon carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Назад</span>
                 </div>
               </a>
               <a class="carousel-control carousel-control-next" href="#sliderOnIndex" role="button" data-slide="next">
                 <div class="icon-wrapper right">
+                  <i class="fa fa-chevron-right control-icon"></i>
                   <span class="control-icon carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Вперед</span>
                 </div>
@@ -376,11 +381,13 @@
               </ul>
             </div>
             <div class="col additional-info">
-              <p>3</p>
+              <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,telegram" data-size="s"></div>
             </div>
           </div>
         </div>
       </footer>
+
+      <i class="btn-to-top fa fa-chevron-up"></i>
 
       <div class="modal fade" id="searchRules" tabindex="-1" role="dialog" aria-labelledby="searchRulesLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">

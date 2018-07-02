@@ -46,14 +46,6 @@
     .heading {
       font-size: $font-size-md;
     }
-    .action-link {
-      display: inline-block;
-      margin-top: 1rem;
-      color: $gray-700;
-      &:hover {
-        color: $gray-800;
-      }
-    }
     &:hover {
       box-shadow: $box-shadow-default;
     }

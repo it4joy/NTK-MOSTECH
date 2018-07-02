@@ -22,12 +22,18 @@
     border-radius: 50%;
     &.left {
       left: -3.5rem;
+      .fa {
+        left: 60%;
+      }
     }
     &.right {
       right: -3.5rem;
+      .fa {
+        right: 60%;
+      }
     }
     .control-icon {
-      position: relative;
+      position: absolute;
     }
   }
 }

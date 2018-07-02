@@ -130,6 +130,12 @@ $breadcrumb-divider-color: $gray-300;
 $breadcrumb-active-color: $gray-900;
 
 
+// Carousel
+
+$carousel-control-prev-icon-bg: none;
+$carousel-control-next-icon-bg: none;
+
+
 // Bootstrap Native
 
 @import "~bootstrap/scss/bootstrap";

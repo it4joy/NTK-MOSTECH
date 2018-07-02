@@ -11,8 +11,8 @@
 
 // Effects
 
-@mixin transition-mixin() {
-  
+@mixin transition-mixin($property, $duration, $t-func, $delay) {
+  transition: $property $duration $t-func $delay;
 }
 
 

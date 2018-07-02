@@ -1,0 +1,17 @@
+.btn-to-top {
+  position: fixed;
+  bottom: 8rem;
+  right: 3rem;
+  z-index: 3;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: rgba($black, .5);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3.6rem !important;
+  color: $gray-300;
+  &:hover {
+    cursor: pointer;
+    background: rgba($black, .9);
+  }
+}

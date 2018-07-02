@@ -9,10 +9,15 @@ module.exports = function(msg) {
 
 let productItemOverlay = $(".overlay-block");
 
-$(".product-item .img-wrapper").hover(function() {
+$(".product-item").hover(function() {
   $(this).find(productItemOverlay).animate({top: "0px"}, 500);
 }, function() {
   $(this).find(productItemOverlay).animate({top: "-18rem"}, 500);
+});
+
+$(".product-item .fa-shopping-cart").on("click", function() {
+  $(this).removeClass("fa-shopping-cart");
+  $(this).addClass("fa-check");
 });
 
 
@@ -29,4 +34,23 @@ $(".has-dropdown").hover(function() {
 }, function() {
   $(this).children(".link").removeClass("current");
   $(this).children(".dropdown-sidebar-menu").hide();
+});
+
+
+// btn-to-top
+
+$(".btn-to-top").hide();
+
+let windowInnerHeight = $(window).innerHeight();
+
+$(window).scroll(function() {
+  if ( $(this).scrollTop() >= windowInnerHeight / 2 ) {
+    $(".btn-to-top").fadeIn();
+  } else {
+    $(".btn-to-top").fadeOut();
+  }
+});
+
+$(".btn-to-top").on("click", function() {
+  $("html, body").animate({ scrollTop: 0 }, 600);
 });
