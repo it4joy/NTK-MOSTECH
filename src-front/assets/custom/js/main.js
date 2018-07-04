@@ -37,13 +37,22 @@ $(".has-dropdown").hover(function() {
 });
 
 
-// btn-to-top
+// sticky top navbar & btn-to-top
 
 $(".btn-to-top").hide();
+
+let topNavStartPos = $(".navbar-wrapper").offset();
+let topNavStartPosTop = topNavStartPos.top;
 
 let windowInnerHeight = $(window).innerHeight();
 
 $(window).scroll(function() {
+  if ( $(this).scrollTop() > topNavStartPosTop ) {
+    $(".navbar-wrapper").addClass("fixed-top");
+  } else {
+    $(".navbar-wrapper").removeClass("fixed-top");
+  }
+
   if ( $(this).scrollTop() >= windowInnerHeight / 2 ) {
     $(".btn-to-top").fadeIn();
   } else {
