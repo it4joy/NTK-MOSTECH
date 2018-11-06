@@ -21,7 +21,7 @@
 
 .app-wrapper {
   @include display-flex-mixin(flex, column, flex-start, stretch, nowrap);
-  min-height: 100vh;
+  height: 100%;
 }
 
 .main-block {
