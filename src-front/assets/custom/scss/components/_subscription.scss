@@ -1,0 +1,29 @@
+.subscription {
+  @include display-flex-mixin(flex, column, flex-start, center, nowrap);
+  padding: 2rem;
+  background: $linear-blue-gradient;
+  border-radius: $border-radius-lg;
+  text-align: center;
+  color: $white;
+}
+
+.call-to-action {
+  margin-bottom: 2rem;
+}
+
+.subscription-form-inline .form-control {
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-subscribe {
+  background: $yellow;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: $dirty-yellow;
+  &:hover {
+    background: darken($yellow, 5%);
+  }
+}

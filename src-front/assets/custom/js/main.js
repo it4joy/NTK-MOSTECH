@@ -75,12 +75,12 @@ $(".tab .tab-link").on("click", function(e) {
   let tabLink = $(this).attr("href");
   tabLink = tabLink.replace("#", "");
   
-  $(".tab-content").slideUp(600);
+  $(".tab-content").hide();
   
   $(this).addClass("active");
   
   $(".tab-content").each(function(i, el) {
     if( $(el).attr("id") == tabLink )
-      $(el).slideDown(600);
+      $(el).show();
   });
 });
