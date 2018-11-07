@@ -22,7 +22,13 @@
 
 // Paragraphs
 
-$font-size-md: 1.6rem;
+.p-md {
+  font-size: $p-md;
+}
+
+.p-lg {
+  font-size: $p-lg;
+}
 
 
 // Heading groups
@@ -57,7 +63,12 @@ $font-size-md: 1.6rem;
 // Links
 
 .link {
-  @include link-mixin;
+  display: inline-block;
+  background-color: $transparent;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .achromatic-link {

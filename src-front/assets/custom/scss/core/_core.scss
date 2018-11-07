@@ -9,7 +9,7 @@
 }
 
 .html, .body {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .body {
@@ -41,7 +41,7 @@
 }
 
 *:hover {
-  @include transition-mixin(all, .5s, linear, 0s);
+  @include transition-mixin(all, .3s, linear, 0s);
 }
 
 

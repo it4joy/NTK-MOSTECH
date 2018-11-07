@@ -1,1 +1,9 @@
+.table-custom {
+  margin-bottom: $spacer * 2;
+}
 
+.table-striped-custom {
+  th, td {
+    border-top: none;
+  }
+}

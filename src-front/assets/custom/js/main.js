@@ -63,3 +63,24 @@ $(window).scroll(function() {
 $(".btn-to-top").on("click", function() {
   $("html, body").animate({ scrollTop: 0 }, 600);
 });
+
+
+// tabs
+
+$(".tab .tab-link").on("click", function(e) {
+  e.preventDefault();
+  
+  $(".tab .tab-link").removeClass("active");
+  
+  let tabLink = $(this).attr("href");
+  tabLink = tabLink.replace("#", "");
+  
+  $(".tab-content").slideUp(600);
+  
+  $(this).addClass("active");
+  
+  $(".tab-content").each(function(i, el) {
+    if( $(el).attr("id") == tabLink )
+      $(el).slideDown(600);
+  });
+});
