@@ -51,6 +51,10 @@
       color: $gray-500;
     }
   }
+  // @media
+  @include respond-to(xsm) {
+    @include display-flex-mixin(flex, column, space-between, center, wrap);
+  }
 }
 
 .std-inner-heading {

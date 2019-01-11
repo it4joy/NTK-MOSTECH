@@ -14,4 +14,9 @@
     cursor: pointer;
     background: rgba($black, .9);
   }
+  // @media
+  @include respond-to(xsm) {
+    bottom: 3rem;
+    right: 2rem;
+  }
 }

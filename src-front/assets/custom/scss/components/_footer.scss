@@ -15,8 +15,32 @@
       margin-top: 1rem;
     }
   }
+  // @media
+  @include respond-to(xsm) {
+    flex: 0 0 28rem;
+    .copyright {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .bottom-links {
+      text-align: center;
+    }
+    .list {
+      & li {
+        margin-bottom: 1rem;
+      }
+      & li:last-child {
+        margin-top: 0;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
 
   .additional-info {
     @include display-flex-mixin(flex, column, flex-start, flex-end, nowrap);
+    // @media
+    @include respond-to(xsm) {
+      @include display-flex-mixin(flex, row, center, center, nowrap);
+    }
   }
 }

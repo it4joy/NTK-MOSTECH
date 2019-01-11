@@ -21,3 +21,49 @@
 @mixin set-case($case) {
   text-transform: $case
 }
+
+
+// @media (according Bootstrap v.4.0 + 320px)
+
+$xsm: 320px; // <=320px
+$sm: 576px; // >=576px
+$md: 768px; // >=768px
+$lg: 992px; // >=992px
+$xlg: 1200px; // >=1200px
+
+@mixin respond-to($media) {
+  @if $media == xsm {
+    @media only screen and (max-width: $xsm) { @content; } // 0-320
+  }
+  @else if $media == sm {
+    @media only screen and (min-width: $xsm + 1) and (max-width: $sm - 1) { @content; } // 321-575
+  }
+  @else if $media == md {
+    @media only screen and (min-width: $sm) and (max-width: $md - 1) { @content; } // 576-767
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: $md) and (max-width: $lg - 1) { @content; } // 768-991
+  }
+  @else if $media == xlg {
+    @media only screen and (min-width: $lg) and (max-width: $xlg - 1) { @content; } // 992-1199
+  }
+  /*
+  @else if $media == oversize {
+    @media only screen and (min-width: $xlg) { @content; }
+  }
+  */
+}
+
+@mixin no-gutters() {
+  margin-right: 0;
+  margin-left: 0;
+  & > .col,
+  & > [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@mixin flex-wrap($val) {
+  flex-wrap: $val;
+}

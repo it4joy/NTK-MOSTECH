@@ -30,6 +30,10 @@
   padding: 1.5rem 0;
   .row {
     min-width: 100%;
+    // @media
+    @include respond-to(xsm) {
+      @include no-gutters();
+    }
   }
 }
 

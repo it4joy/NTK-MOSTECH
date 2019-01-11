@@ -48,6 +48,10 @@
   .price {
     padding: 1rem;
   }
+  // @media
+  @include respond-to(xsm) {
+    margin-bottom: 2rem;
+  }
 }
 
 // `product`
