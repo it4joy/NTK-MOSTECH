@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/it4joy/NTK-MOSTECH.git"
+    "url": ""
   },
   "keywords": [],
-  "author": "Igor Ivanov - Graphical Shell",
+  "author": "Igor Ivanov",
   "license": "GPL-3.0",
   "dependencies": {
     "autoprefixer": "^8.6.2",
